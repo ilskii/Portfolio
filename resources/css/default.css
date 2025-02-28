@@ -1,0 +1,297 @@
+body {
+    background-color: #3AAFA9;
+    font-family: 'Roboto', Arial;
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: 80% 20%; 
+    grid-template-rows: auto 1fr; 
+    height: 100%;
+}
+
+.header-nav {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 50px;
+}
+
+/* Navigaatiomenu */
+
+.side-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 150px;
+}
+
+.dropbtn {
+    background-color: #17252A;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: #17252A solid 3px;
+}
+
+.menu-icon {
+    background: url(/resources/images/icons8-hamburger-menu-50.png) no-repeat center center;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    display: flex;
+}
+
+.side-nav-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #17252A;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 20;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.side-nav-content a {
+    font-family: 'Roboto', Arial;
+    color: #FEFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.side-nav-content a:hover {
+    background-color: #FEFFFF;
+    color: #17252A;
+    transition: 0.3s;
+}
+
+.side-nav:hover .side-nav-content {
+    display: block;
+}
+
+.side-nav:hover .dropbtn {
+    border: #FEFFFF solid 3px;
+}
+
+/* Navigaatiopalkki */
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.top-nav-content {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.top-nav a {
+    font-family: 'Roboto', Arial;
+    font-size: 20px;
+    color: #FEFFFF;
+    background-color: #17252A;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.top-nav a:hover {
+    background-color: #FEFFFF;
+    color: #17252A;
+    transition: 0.3s;
+}
+
+.top-nav a.active {
+    text-decoration: underline;
+}
+
+/* Kontaktiboksi*/
+
+.right-container {
+    background-color: #17252A;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100%;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 1px #FEFFFF;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.right-container-header,
+.right-container-contact {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.right-container-header {
+    color: #FEFFFF;
+    font-size: 40px;
+}
+.right-container-contact {
+    font-size: 30px;
+    color: #FEFFFF;
+    text-decoration: underline;
+}
+
+@keyframes blink-cursor {
+    from { border-right-color: #17252A}
+    to { border-right-color: transparent;}
+}
+
+.grid-container-content {
+    grid-column: 1 / 2;
+    border: solid #17252A 1px;
+}
+
+/* Kontaktiboksin ikonit */
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-icons a {
+    color: #3AAFA9;
+    text-decoration: none;
+}
+
+.contact-icons i {
+    font-size: 50px
+}
+
+.contact-icons h4 {
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.contact-icons i:hover {color: #FEFFFF;}
+.contact-icons h4:hover {color: #FEFFFF;}
+
+.copyright {
+    margin-top: 60%;
+    color: #FEFFFF;
+    text-align: center;
+}
+
+/* Tabit */
+
+.tab {
+    overflow: hidden;
+    margin-left: 21%;
+    margin-top: 5%;
+}
+
+.tab button {
+    background-color: #17252A;
+    color: #FEFFFF;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid #17252A;
+}
+
+.tab button:hover {
+    background-color: #FEFFFF;
+    color: #17252A;
+}
+
+.tab button.active {
+    border: 2px solid #FEFFFF;
+    background-color: #17252A;
+    color: #FEFFFF;
+}
+
+.tabcontent {
+    display: none;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    animation: fadeEffect 1s;
+    margin-left: 21%;
+    margin-right: 10%;
+    font-size: 20px;
+    background-color: #FEFFFF;
+    border-radius: 5px;
+}
+  
+.tabcontent h3 {
+    margin-left: 2%;
+    text-decoration: underline;
+}
+
+.tabcontent p {
+    margin-left: 2%;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
