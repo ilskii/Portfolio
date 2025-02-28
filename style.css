@@ -1,0 +1,18 @@
+.grid-container-content {
+    display: block;
+}
+
+.welcome {
+    grid-column: 1 / 2;
+    text-align: center;
+    margin-top: 2%;
+    overflow: hidden;
+    animation: blink-cursor 0.75s step-end infinite;
+    width: 100%;
+    color: #17252A;
+}
+
+@keyframes blink-cursor {
+    from { border-right-color: #17252A}
+    to { border-right-color: transparent;}
+}

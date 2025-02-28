@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilari Tuominen</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/resources/css/default.css">
+    <!-- Roboto-fontti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Ikonit-->
+    <script src="https://kit.fontawesome.com/2fda77b21b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <!--Header-->
+        <header class="header-nav">
+            <div class="nav-container">
+                <!--Side-navi-->
+                <nav class="side-nav">
+                    <button class="dropbtn"><i class="menu-icon"></i></button>
+                    <div class="side-nav-content">
+                        <a href="/index.html">About me</a>
+                        <a href="/pages/02-skills/skills.html">Skills</a>
+                        <a href="/pages/03-projects/projects.html">Projects</a>
+                    </div>
+                </nav>
+                <!--Top-navi-->
+                <nav class="top-nav">
+                    <div class="top-nav-content">
+                        <a href="/index.html" class="nav-link">About me</a>
+                        <a href="/pages/02-skills/skills.html" class="nav-link">Skills</a>
+                        <a href="/pages/03-projects/projects.html" class="nav-link">Projects</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--Ota yhteyttä containeri-->
+        <aside class="right-container">
+            <div class="contact-container">
+                <h1 class="right-container-header">Ilari Tuominen</h1>
+                <img src="/resources/images/profiili.jpg" alt="Ilari Tuomisen profiilikuva" class="profile-image">
+                <h3 class="right-container-contact">Contact me</h3>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/ilari-tuominen-531537193/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ilskii" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ilari.tuominen@outlook.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="/pages/05-contact-form/form.html" target="_blank"><h4>Contact Form</h4></a>
+                </div>
+                <div class="copyright">
+                    &copy; 2025 Ilari Tuominen
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-container">
+            <!--Tervetuloa-tekstin efekti-->
+            <div class="welcome">
+                <h1 id="typing-effect"></h1><br>
+            </div>
+            <!--Tabien linkit-->
+            <div class="tab">
+                <button class="tablinks" onclick="openInfo(event, 'introduction')">Introduction</button>
+                <button class="tablinks" onclick="openInfo(event, 'education')">Education</button>
+            </div>
+            <!--Tabien sisältö-->
+            <div id="introduction" class="tabcontent">
+                <h3>Introduction</h3>
+                <p>
+                    I am a Bachelor of Business Administration specialized in international trade, and I have work experience in several different fields. However, I have decided to start my career in the ICT field because I have a lot of interest in software developing.
+                    <br><br>
+                    I am currently studying at Taitalo to become a software developer (front-end), a vocational degree in information and communication technology. My studies are still ongoing, but I learn quickly and all tasks related to the ICT sector interest me a lot, for example I have done a little game programming with Unity (C# language) to learn more alongside my studies.
+                    <br><br>
+                    My previous work experience and expertise is related to logistics, customer service, purchasing, document management and office work in general. I am skilled with various resource planning systems (e.g. SAP and CRM), and I solve even the most difficult problems well under pressure. I do the tasks I am given with good quality until the end, because achieving goals and finding solutions is important to me
+                </p>
+            </div>
+
+            <div id="education" class="tabcontent">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Software developer (web development)</strong>, vocational upper secondary qualification in information and communication technology,Taitotalo (ongoing)</li><br><br>
+                    <li><strong>Bachelor of Business Administration</strong>, specialized in international trade, Vaasa University of Applied Sciences (2018)</li><br><br>
+                    <li><strong>Tikkurila high school graduate</strong>, with an emphasis on music (music diploma) (2010)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--Scriptit-->
+    <script src="/resources/javascript/javascript.js"></script>
+</body>
+</html>
