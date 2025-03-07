@@ -1,4 +1,5 @@
 # Portfolio
 This is my portfolio.
 
-Languages used: HTML, CSS and JavaScript.
+Markup languages used: HTML, CSS
+Programming languages uses: JavaScript.
