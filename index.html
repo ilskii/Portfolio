@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilari Tuominen</title>
+    
+    <link rel="stylesheet" href="resources/css/default.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Roboto-fontti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Ikonit-->
+    <script src="https://kit.fontawesome.com/2fda77b21b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <!--Side-navi-->
+        <nav class="side-nav">
+            <button class="dropbtn"><i class="menu-icon"></i></button>
+            <div class="side-nav-content">
+                <a href="index.html">About me</a>
+                <a href="pages/02-skills/skills.html">Skills</a>
+                <a href="pages/03-projects/projects.html">Projects</a>
+            </div>
+        </nav>
+        <!--Top-navi-->
+        <header class="top-nav">
+            <div class="top-nav-content">
+                <a href="index.html" class="nav-link">About me</a>
+                <a href="pages/02-skills/skills.html" class="nav-link">Skills</a>
+                <a href="pages/03-projects/projects.html" class="nav-link">Projects</a>
+            </div>
+        </header>
+
+        <!--Ota yhteyttä containeri-->
+        <aside class="right-container">
+            <div class="contact-container">
+                <div class="contact-text-image">
+                <h1 class="right-container-header">Ilari Tuominen</h1>
+                <img src="resources/images/profiili.jpg" alt="Ilari Tuomisen profiilikuva" class="profile-image">
+                <h3 class="right-container-contact">Contact me</h3>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/ilari-tuominen-531537193/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ilskii" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ilari.tuominen@outlook.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="pages/04-form/form.html"><h4>Contact Form</h4></a>
+                </div>
+                <div class="cv-download">
+                    <h4>Download My CV:</h4>
+                    <a href="resources/documents/CV_Ilari Tuominen_en.pdf" download>
+                        <i class="fa-solid fa-download"></i> Click here to download
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2025 Ilari Tuominen
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-container">
+
+            <!--Typing efekti ja tervetuloa-teksti-->
+            <div id="typingContainer">
+                Hello there & welcome to my portfolio! My name is Ilari Tuominen. On this page you can find my introduction and information about my studies thus far. On the right you can see different ways to contact me.
+            </div>
+
+            <!--Tabien linkit-->
+            <div class="tab">
+                <button class="tablinks" onclick="openInfo(event, 'introduction')">Introduction</button>
+                <button class="tablinks" onclick="openInfo(event, 'education')">Education</button>
+            </div>
+
+            <!--Tabien sisältö-->
+            <div id="introduction" class="tabcontent">
+                <p>
+                    I am a Software Development student currently living in Vantaa, Finland. My hobbies include playing drums, cooking, and gaming. I also enjoy tinkering with computers and helping people with computer or operating system-related issues. Solving different kinds of problems is something I truly enjoy, and I have become quite skilled at it.
+                    <br><br>
+                    I hold a Bachelor's degree in Business Administration, with a specialization in international trade, and I have previous work experience across various fields. Despite this, I decided to pursue a career in the ICT sector due to my long-standing interest for software development. Having played different types of games throughout my life, I began my journey with a Udemy Game Developer course. This sparked my enthusiasm for programming and led me to explore pathways to becoming a Software Developer. When the opportunity arose to study Software Development at Taitotalo, I seized it without hesitation.
+                    <br><br>
+                    I am currently working toward a vocational degree in information and communication technology at Taitotalo, specializing in front-end development. So far, I have learned a great deal and strive to expand my knowledge every day. For example, I have created various website projects using different tools and have started new ventures with JavaScript, Node.js, and React. The more I learn, the hungrier I become for more knowledge, and I have numerous upcoming projects lined up. One such project is developing a UI for a Raspberry Pi equipped with various sensors to collect data.
+                    <br><br>
+                    My previous work experience has given me expertise in logistics, customer service, purchasing, document management, and office work in general. I am proficient with several resource planning systems (e.g. SAP and CRM), and I excel at solving complex problems under pressure. Adaptability and quick learning are among my key strengths, honed through my diverse professional background. I take pride in completing tasks with precision and high quality, as achieving goals and discovering new solutions are important to me.
+                </p>
+            </div>
+
+            <div id="education" class="tabcontent">
+                <ul>
+                    <h3>Software developer (web development), Taitotalo</h3>
+                        <br>
+                        <ul>• Specialized in front-end</ul><br>
+                        <ul>• Vocational upper secondary qualification in information and communication technology</ul><br>
+                        <ul>• Ongoing, graduation in 2026</ul>
+                        <br>
+                    <h3>Bachelor's degree in Business Administration, Vaasa University of Applied Sciences</h3>
+                        <br>
+                        <ul>• Specialized in international trade</ul><br>
+                        <ul>• Graduated 2018</ul>
+                        <br>
+                    <h3>Tikkurila high school graduate</h3>
+                        <br>
+                        <ul>• Specialized in music (music diploma)</ul><br>
+                        <ul>• Graduated 2010</ul>
+                        <br>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--Scriptit-->
+    <script src="resources/javascript/javascript.js"></script>
+</body>
+</html>

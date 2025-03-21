@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilari Tuominen</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="../../resources/css/default.css">
+    <!-- Roboto-fontti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Ikonit-->
+    <script src="https://kit.fontawesome.com/2fda77b21b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <!--Side-navi-->
+        <nav class="side-nav">
+            <button class="dropbtn"><i class="menu-icon"></i></button>
+            <div class="side-nav-content">
+                <a href="../../index.html">About me</a>
+                <a href="../02-skills/skills.html">Skills</a>
+                <a href="../03-projects/projects.html">Projects</a>
+            </div>
+        </nav>
+        <!--Top-navi-->
+        <header class="top-nav">
+            <div class="top-nav-content">
+                <a href="../../index.html" class="nav-link">About me</a>
+                <a href="../02-skills/skills.html" class="nav-link">Skills</a>
+                <a href="../03-projects/projects.html" class="nav-link">Projects</a>
+            </div>
+        </header>
+
+        <!--Ota yhteyttä containeri-->
+        <aside class="right-container">
+            <div class="contact-container">
+                <div class="contact-text-image">
+                <h1 class="right-container-header">Ilari Tuominen</h1>
+                <img src="../../resources/images/profiili.jpg" alt="Ilari Tuomisen profiilikuva" class="profile-image">
+                <h3 class="right-container-contact">Contact me</h3>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/ilari-tuominen-531537193/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ilskii" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ilari.tuominen@outlook.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="form.html"><h4>Contact Form</h4></a>
+                </div>
+                <div class="cv-download">
+                    <h4>Download My CV:</h4>
+                    <a href="../../resources/documents/CV_Ilari Tuominen_en.pdf" download>
+                        <i class="fa-solid fa-download"></i> Click here to download
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2025 Ilari Tuominen
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-container">
+        <div class="container">
+            <h1>Contact Form</h1>
+            <form action="https://formspree.io/f/xqaperaj" method="POST" class="contact-form">
+                <label>
+                  Your name:
+                  <input type="text" name="name" required>
+                </label>
+                <label>
+                  Your email:
+                  <input type="email" name="email" required>
+                </label>
+                <label>
+                  Your message:
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button type="submit">Submit</button>
+              </form>
+              <h5>This form is powered by <a href="https://formspree.io/" target="_blank" class="formspree">Formspree</a></h5>
+          </div>
+        </div>
+        <script src="../../resources/javascript/javascript.js"></script>
+</body>
+</html>

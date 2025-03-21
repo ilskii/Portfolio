@@ -1,0 +1,288 @@
+#tools_languages {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 20px;
+}
+
+#certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#certifications .certificate-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#certifications a img {
+    width: 300px;
+    height: 280px;
+    margin: 20px 0;
+}
+
+#certifications .certificate-item a {
+    text-decoration: none;
+    color: #FEFFFF;
+}
+
+.certificate-item img {
+    border: solid 3px black;
+}
+
+.certificate-item img:hover {
+    border: solid 3px greenyellow;
+}
+
+/* Taitopalkit */
+
+li { /* muotoile li-tagi */
+    list-style-type: none;
+}
+
+.skills { /* muotoile teksti ja container */
+    grid-column: 1/2;
+    width: 100%;
+    color: #3AAFA9;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.skills li {
+    margin-bottom: 7vh; /* Adjust the spacing here */
+}
+
+.bar { /* muotoile palkki */
+    background-color: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px green;
+}
+
+.bar span{ /* muotoile span-tagi */
+    height: 10px;
+    float: left;
+    background-color: greenyellow;
+}
+
+ /* taidot ja animaatiot */
+
+.html{
+    width: 60%;
+    animation: html 3s;
+}
+
+.css{
+    width: 75%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 45%;
+    animation: javascript 3s;
+}
+
+.react{
+    width: 35%;
+    animation: react 3s;
+}
+
+.vite{
+    width: 15%;
+    animation: vite 3s;
+}
+
+.nodejs{
+    width: 35%;
+    animation: nodejs 3s;
+}
+
+.express{
+    width: 10%;
+    animation: express 3s;
+}
+
+.azurefunctions{
+    width: 10%;
+    animation: express 3s;
+}
+
+.jquery{
+    width: 30%;
+    animation: jquery 3s;
+}
+
+.mysql{
+    width: 45%;
+    animation: mysql 3s;
+}
+
+.mongodb{
+    width: 24%;
+    animation: mongodb 3s;
+}
+
+/* animaatiot taidoille */
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 45%;
+    }
+}
+
+@keyframes jquery{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 35%;
+    }
+}
+
+@keyframes vite{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 15%;
+    }
+}
+
+@keyframes nodejs{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 35%;
+    }
+}
+
+@keyframes express{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes azurefunctions{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 45%;
+    }
+}
+
+@keyframes mongodb{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 24%;
+    }
+}
+
+/* Taitojen inffot */
+
+.skillsInfo {
+    grid-column: 2 / 3;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.skillsInfoList h5{
+    color: #3AAFA9;
+}
+
+/* Responsiivisuus */
+
+@media (max-width: 768px) {
+    #certifications {
+        flex-direction: column; /* asettele kohteet pystysuoraan pienille näytöille */
+        gap: 10px;
+    }
+
+    #certifications .certificate-item {
+        width: 100%; /* varmista, että kohteet vievät koko säilön leveyden */
+    }
+    .skills {
+        font-size: 14px;
+    }
+    .skills{
+        width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+    #tools_languages {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .skills,
+    .skillsInfo {
+        grid-column: 1 / 2; /* Both take full width */
+        width: 100%;
+    }
+
+}

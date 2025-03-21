@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilari Tuominen</title>
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="../../resources/css/default.css">
+    <!-- Roboto-fontti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Ikonit-->
+    <script src="https://kit.fontawesome.com/2fda77b21b.js" crossorigin="anonymous"></script>
+    <!--Värien testausta, poista kun CSS ok-->
+</head>
+<body>
+    <div class="grid-container">
+        <!--Side-navi-->
+        <nav class="side-nav">
+            <button class="dropbtn"><i class="menu-icon"></i></button>
+            <div class="side-nav-content">
+                <a href="../../index.html">About me</a>
+                <a href="skills.html">Skills</a>
+                <a href="../03-projects/projects.html">Projects</a>
+            </div>
+        </nav>
+        <!--Top-navi-->
+        <header class="top-nav">
+            <div class="top-nav-content">
+                <a href="../../index.html" class="nav-link">About me</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="../03-projects/projects.html" class="nav-link">Projects</a>
+            </div>
+        </header>
+
+        <!--Ota yhteyttä containeri-->
+        <aside class="right-container">
+            <div class="contact-container">
+                <div class="contact-text-image">
+                <h1 class="right-container-header">Ilari Tuominen</h1>
+                <img src="../../resources/images/profiili.jpg" alt="Ilari Tuomisen profiilikuva" class="profile-image">
+                <h3 class="right-container-contact">Contact me</h3>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/ilari-tuominen-531537193/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ilskii" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ilari.tuominen@outlook.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="../04-form/form.html"><h4>Contact Form</h4></a>
+                </div>
+                <div class="cv-download">
+                    <h4>Download My CV:</h4>
+                    <a href="../../resources/documents/CV_Ilari Tuominen_en.pdf" download>
+                        <i class="fa-solid fa-download"></i> Click here to download
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2025 Ilari Tuominen
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-container">
+
+            <!--Typing efekti ja tervetuloa-teksti-->
+            <div id="typingContainer">
+                Here you can see my skill levels in different tools & languages at the moment, and my certifications so far.
+            </div>
+
+            <!--Tabien linkit-->
+            <div class="tab">
+                <button class="tablinks" onclick="openInfo(event, 'tools_languages')">My tools & languages</button>
+                <button class="tablinks" onclick="openInfo(event, 'certifications')">Certifications </button>
+            </div>
+            <!--Tabien sisältö-->
+            <div id="tools_languages" class="tabcontent">
+                <div class="skills">
+                    <li>
+                        <h3>HTML</h3><span class="bar"><span class="html"></span></span>
+                    </li>
+                
+                    <li>
+                        <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+                    </li>
+                
+                    <li>
+                        <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span>
+                    </li>
+                    
+                    <li>
+                        <h3>REACT</h3><span class="bar"><span class="react"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>VITE</h3><span class="bar"><span class="vite"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>JQUERY</h3><span class="bar"><span class="jquery"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>NODE.JS</h3><span class="bar"><span class="nodejs"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>EXPRESS</h3><span class="bar"><span class="express"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>AZURE FUNCTIONS</h3><span class="bar"><span class="azurefunctions"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>MYSQL</h3><span class="bar"><span class="mysql"></span></span>
+                    </li>
+
+                    <li>
+                        <h3>MONGODB</h3><span class="bar"><span class="mongodb"></span></span>
+                    </li>
+                </div>
+                <div class="skillsInfo">
+                    <ul class="skillsInfoList">
+                        <h5>HTML</h5>
+                        <p>• Multiple courses and projects: done<br>• Level of studies: second year</p>
+                        <h5>CSS</h5>
+                        <p>• Multiple courses and projects: done<br>• Level of studies: second year</p>
+                        <h5>JavaScript</h5>
+                        <p>• Multiple courses and projects: ongoing<br>• Level of studies: second year</p>
+                        <h5>React</h5>
+                        <p>• Several courses and projects: ongoing<br>• Level of studies: first year</p>
+                        <h5>Vite</h5>
+                        <p>• Several courses and projects: ongoing<br>• Level of studies: first year</p>
+                        <h5>Jquery</h5>
+                        <p>• Several courses and projects: ongoing<br>• Level of studies: first year</p>
+                        <h5>Node.js</h5>
+                        <p>• Multiple courses and projects: ongoing<br>• Level of studies: first year</p>
+                        <h5>Express</h5>
+                        <p>• Several courses and projects: ongoing<br>• Level of studies: first year</p>
+                        <h5>Azure Functions</h5>
+                        <p>• Several courses and projects: ongoing<br>• Level of studies: first year</p>
+                        <h5>MySQL</h5>
+                        <p>• Multiple courses and projects: ongoing<br>• Level of studies: second year</p>
+                        <h5>MongoDB</h5>
+                        <p>• Several courses and projects: ongoing<br>• Level of studies: first year</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="certifications" class="tabcontent">
+                <div class="certificate-item">
+                    <a href="https://www.credly.com/badges/1d9afea7-2120-4b21-b685-d2d7def1c176/public_url" target="_blank">
+                        <strong>HTML and CSS</strong>
+                    </a>
+                    <a href="https://www.credly.com/badges/1d9afea7-2120-4b21-b685-d2d7def1c176/public_url" target="_blank">
+                        <img src="../../resources/images/html_css.jpg" alt="A screenshot of PearsonVue HTML/CSS certificate awarded for Ilari Tuominen">
+                    </a>
+                </div>
+                <div class="certificate-item">
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/IlariTuominen-1592/1C9D1DE58D39D878?sharingId=2DBB50BFD9A74A8" target="_blank">
+                        <strong>Azure AI Fundamentals (AI-900)</strong>
+                    </a>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/IlariTuominen-1592/1C9D1DE58D39D878?sharingId=2DBB50BFD9A74A8" target="_blank">
+                        <img src="../../resources/images/az-900.jpg" alt="A screenshot of Microsoft AZ-900 certificate awarded for Ilari Tuominen">
+                    </a>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+    <!--Scriptit-->
+    <script src="../../resources/javascript/javascript.js"></script>
+</body>
+</html>

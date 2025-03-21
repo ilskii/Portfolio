@@ -1,0 +1,99 @@
+.projectHeader {
+    text-align: center;
+}
+
+.projectImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: auto;
+    border: solid 3px black;
+}
+
+.projectImg:hover {
+    border: solid 3px greenyellow;
+}
+
+.projectLink {
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.projectLink a {
+    text-decoration: none;
+    color: gray;
+}
+
+.projectLink a:hover {
+    color: #FEFFFF;
+}
+
+.parentCodeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeContainer {
+    max-width: 70%;
+    margin-top: 10%;
+    box-sizing: border-box;
+}
+
+.language-javascript {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    overflow-x: auto;
+    border-radius: 5px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#inProgress {
+    overflow-x: auto;
+    box-sizing: border-box; 
+}
+
+.hljs {
+    background-color: #282c34; /* Dark background */
+    color: #abb2bf; /* Main text color */
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .hljs-keyword {
+    color: #c678dd; /* Keywords like "function" */
+    font-weight: bold;
+  }
+  
+  .hljs-string {
+    color: #98c379; /* Strings like "Hello, world!" */
+  }
+  
+  .hljs-built_in {
+    color: #56b6c2; /* Built-in functions */
+  }
+  
+
+/*Responsiivisuus*/
+
+@media (max-width:999px){
+    .projectHeader {
+        font-size: 24px;
+    }
+    .codeContainer code {
+        font-size: 8px;
+    }
+    .parentCodeContainer {
+        max-width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}

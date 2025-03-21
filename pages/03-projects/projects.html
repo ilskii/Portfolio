@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilari Tuominen</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../../resources/css/default.css">
+    <!-- Roboto-fontti -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Ikonit-->
+    <script src="https://kit.fontawesome.com/2fda77b21b.js" crossorigin="anonymous"></script>
+    <!--Highlight.js kirjasto koodisnipeteille-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="grid-container">
+        <!--Side-navi-->
+        <nav class="side-nav">
+            <button class="dropbtn"><i class="menu-icon"></i></button>
+            <div class="side-nav-content">
+                <a href="../../index.html">About me</a>
+                <a href="../02-skills/skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+            </div>
+        </nav>
+        <!--Top-navi-->
+        <header class="top-nav">
+            <div class="top-nav-content">
+                <a href="../../index.html" class="nav-link">About me</a>
+                <a href="../02-skills/skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+            </div>
+        </header>
+
+        <!--Ota yhteyttä containeri-->
+        <aside class="right-container">
+            <div class="contact-container">
+                <div class="contact-text-image">
+                <h1 class="right-container-header">Ilari Tuominen</h1>
+                <img src="../../resources/images/profiili.jpg" alt="Ilari Tuomisen profiilikuva" class="profile-image">
+                <h3 class="right-container-contact">Contact me</h3>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/ilari-tuominen-531537193/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ilskii" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ilari.tuominen@outlook.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="../04-form/form.html"><h4>Contact Form</h4></a>
+                </div>
+                <div class="cv-download">
+                    <h4>Download My CV:</h4>
+                    <a href="../../resources/documents/CV_Ilari Tuominen_en.pdf" download>
+                        <i class="fa-solid fa-download"></i> Click here to download
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2025 Ilari Tuominen
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-container">
+
+            <!--Typing efekti ja tervetuloa-teksti-->
+            <div id="typingContainer">
+                Welcome to my Projects -page. I have categorized the projects so it would be easier to go through them.
+            </div>
+
+            <!--Tabien linkit-->
+            <div class="tab">
+                <button class="tablinks" onclick="openInfo(event, 'completed')">Completed</button>
+                <button class="tablinks" onclick="openInfo(event, 'inProgress')">In Progress</button>
+                <button class="tablinks" onclick="openInfo(event, 'upcoming')">Upcoming</button>
+            </div>
+            <!--Tabien sisältö-->
+            <div id="completed" class="tabcontent">
+                
+                <ul class="luohaus">
+                    <div class="projectHeader">
+                    <h3>Freelance company Luohaus: WordPress website project</h3>
+                    <h5>Personal project</h5>
+                    <h5>(10/2024 - 01/2025)</h5>
+                    </div>
+                    <div class="projectLink">
+                    <a href="//www.luohaus.fi/" target="_blank"><img class="projectImg" alt="Screenshot of Luohaus.fi -website" src="../../resources/images/luohaus1.jpg"></a>
+                    <a href="https://www.luohaus.fi/" target="_blank">https://www.luohaus.fi/</a>
+                    </div>
+                    <h4>Tools used:</h4>
+                    <p>WordPress, various WordPress plugins, XAMPP, MySQL, Google Translation API, VS Code, HTML, CSS</p>
+                    <h4>Summary:</h4>
+                    <p>
+                    The web service project was implemented using the WordPress content management system. The purpose of the project was to create a portfolio website for a small company offering graphic design services, so the customers could view the company's work and easily contact the entrepreneur.
+                    <br><br>
+                    The website design focused on the accessibility, usability, necessary functionalities and on a pleasant graphic appearance of the website. In addition to the version that was published on the client's web hosting service, an online store version was also created in accordance with the professional requirements for Taitotalo's skills demonstration.
+                    <br><br>
+                    Once a suitable WordPress theme had been selected, the theme was modified to suit the purpose, for example with different fonts, colors and structures. Various WordPress plugins corresponding to the required functionalities were selected, such as Duplicator, AIOSEO, WooCommerce, etc. Content provided by the client was added to the pages according to the graphic instructions, and the appearance of the site was corrected if necessary. The site was published on a Finnish web hosting service called Hostingpalvelu.
+                    <br><br>
+                    The project was successful according to the client, and it is planned to be developed further later.
+                    </p>
+                </ul><br><br>
+                <hr>
+                <ul class="kalevalakino">
+                    <div class="projectHeader">
+                    <h3>Kalevala Kino movie theater: static website project</h3>
+                    <h5>Group project</h5>
+                    <h5>(09/2024 - 01/2025)</h5>
+                    </div>
+                    <div class="projectLink">
+                    <a href="https://asuomela.github.io/WEB15_Ryhma4_Web-projekti/" target="_blank"><img class="projectImg" alt="Screenshot of Kalevala Kino -website" src="../../resources/images/kalevalakino1.jpg"></a>
+                    <a href="https://asuomela.github.io/WEB15_Ryhma4_Web-projekti/" target="_blank">https://asuomela.github.io/WEB15_Ryhma4_Web-projekti/</a>
+                    </div>
+                    <h4>GitHub repository:</h4>
+                    <a href="https://github.com/ASuomela/WEB15_Ryhma4_Web-projekti" target="_blank" class="repoLink">https://github.com/ASuomela/WEB15_Ryhma4_Web-projekti</a>
+                    <h4>Tools used:</h4>
+                    <p>HTML, CSS, JavaScript, Visual Studio Code, GitHub, Microsoft Copilot, Figma, Draw.io, Scrum project management framework</p>
+                    <h4>Summary:</h4>
+                    <p>
+                    As part of a team, I worked on a web project where we created a static website for a fictional movie theater, Kalevala Kino.
+                    <br><br>
+                    We used the scrum method for project management switching roles between sprints.
+                    The website was implemented using HTML and CSS markup languages, as well as the JavaScript programming language for functionalities. The coding itself was done with Visual Studio Code, and Microsoft Copilot was used for support.
+                    We used Figma and Draw.io for design assistance. The project's files and code were managed using GitHub. The project was completed in time as planned.
+                    <br><br>
+                    My reponsibility was to create the landing page, front page and movie wiki page. I also designed and implemented the website header, and created the functionalities for the site using javascript.
+                    <br><br>
+                    We will continue with the same project in the next section of the course, where we will make the site dynamic with many different new features.
+                    </p>
+                </ul><br><br>
+            </div>
+
+            <div id="inProgress" class="tabcontent">
+                <ul class="mern">
+                    <div class="projectHeader">
+                    <h3>Full stack course project: eCommerce implementation</h3>
+                    <h5>Personal project</h5>
+                    <h5>03/2025 (in progress)</h5>
+                    </div>
+                    <div class="projectLink">
+                        <a href="https://github.com/ilskii/verkkokauppa-toteutus/" target="_blank"><img class="projectImg" alt="Screenshot of the project architecture" src="../../resources/images/MERN.jpg"></a>
+                        <a href="https://github.com/ilskii/verkkokauppa-toteutus/" target="_blank">https://github.com/ilskii/verkkokauppa-toteutus/</a>
+                        <div class="parentCodeContainer">
+                        <div class="codeContainer">
+                            <h4>Code snippet from the project:</h4>
+                            <pre><code class="language-javascript">
+const { app } = require('@azure/functions');
+const { GET } = require('./methods/GET');
+const { POST } = require('./methods/POST');
+const { DELETE } = require('./methods/DELETE');
+const { PUT } = require('./methods/PUT');
+    
+app.http('products', {
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], //määritellään käytettävät metodit
+    authLevel: 'anonymous',
+    route: "products/{id?}",
+    handler: async (request, context) => {
+    
+        //try-catch -virheenkäsittely, muista testata Postmanilla että toimiiko
+
+        try{
+
+            //switch statement / switch..case
+
+            let response;
+
+            switch(request.method) {
+
+                case "GET": //"GET", "get" on eri asia
+                    response = await GET(context);
+                    return response;
+
+                case "POST":
+                    response = await POST(request, context);
+                    return response;
+
+                case "PUT":
+                    response = await PUT(request, context);
+                    return response;
+
+                case "DELETE":
+                    response = await DELETE(request, context);
+                    return response;
+
+                default:
+                    context.log("Bad method!");
+                    return { status: 400, body: "Bad request." }
+            }
+        }
+
+        catch(error) {
+            return { status: 500, body: "Internal server error" }
+        }
+    }
+});
+                            </code></pre>
+                        </div>
+                        </div>
+                    </div>
+                    <h4>Goals of the project:</h4>
+                    <div class="projectContainer1">
+                        <ul>• use MERN-stack</ul>
+                        <ul>• build an user interface (APP)</ul>
+                        <ul>• build a server interface (API)</ul>
+                        <ul>• build the necessary databases (DB)</ul>
+                        <ul>• build data transfer between the different components</ul>
+                    </div>
+                    <h4>Tools used:</h4>
+                    <div class="projectContainer2">
+                        <ul>• MongoDB</ul>
+                        <ul>• Azure Function App (replaced Express in this project)</ul>
+                        <ul>• React</ul>
+                        <ul>• Node.js</ul>
+                        <ul>• JavaScript</ul>
+                        <ul>• Visual Studio Code</ul>
+                        <ul>• Scrum project management framework</ul>
+                    </div>
+                    <h4>Summary:</h4>
+                    <p>
+                        <h5>User interface implementation (app)</h5>
+                        <ul>• Reactjs CRA + MUI component library</ul>
+                        <ul>• Graphical implementation for a self-invented marketplace</ul>
+                        <ul>• Communication with the server interface (axios)</ul>
+                        <h5>Server interface implementation (api)</h5>
+                        <ul>• Azure Function App serverless server interface</ul>
+                        <ul>• Creating functions and CRUD operations</ul>
+                        <ul>• Communication paths for the user interface and database</ul>
+                        <ul>• Using the POSTMAN tool in server interface development</ul>
+                        <h5>Database implementation (db)</h5>
+                        <ul>• Json-server and MONGODB implementations</ul>
+                        <h5>Project management framework (scrum)</h5>
+                        <ul>• Agile software development is implemented</ul>
+                        <ul>• One sprint, which includes sprint planning, daily meetings and a sprint review</ul>
+                    </p>
+                </ul><br><br>
+                <hr>
+                <ul class="tic-tac-toe">
+                    <div class="projectHeader">
+                    <h3>React course project: Tic-Tac-Toe -game</h3>
+                    <h5>Personal project</h5>
+                    <h5>03/2025 (in progress)</h5>
+                    </div>
+                    <div class="projectLink">
+                        <img class="projectImg" alt="Image of React-logo" src="../../resources/images/tictactoe.jpg">
+                        <h5>No active GitHub repository yet</h5>
+                        <div class="parentCodeContainer">
+                        <div class="codeContainer">
+                            <h4>Code snippet from the project:</h4>
+                            <pre><code class="language-javascript">
+//Tuodaan tarvittavat Reactin osat
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { useState } from "react";
+import './index.css';
+import App from './App';
+
+//Komponentti 'Square' saa ruudukon arvon 'Board' komponentilta
+//Luodaan 'onSquareClick', joka klikkauksella suorittaa funktion 'handleClick'
+// -> joka taas luo arvon ruudukkoon funktion 'Board' avulla
+function Square({ value, onSquareClick }) {
+    return (
+    &lt;button className="square" onClick={onSquareClick}&gt;
+        {value}
+    &lt;/button&gt;
+    );
+}
+
+//Luodaan ruudukko ja komponentti 'Board' ruudukon ja sen arvojen hallinnointiin
+export default function Board() {
+    const [squares, setSquares] = useState(Array(9).fill(null));
+//komponentti 'handleClick' luo ruudukkoon kirjaimen 'X'
+    function handleClick(i) {
+        const nextSquares = squares.slice();
+        nextSquares[i] = "X";
+        setSquares(nextSquares);
+    }
+//Luodaan ruudukko ja määritetään mitä tapahtuu kun ruutua klikkaa
+//Funktio 'Board' hallitsee ruudukon tilaa
+    return (
+        &lt;&gt;
+            &lt;div className="board-row"&gt;
+                &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)} /&gt;
+                &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)} /&gt;
+                &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)} /&gt;
+            &lt;/div&gt;
+
+            &lt;div className="board-row"&gt;
+                &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)} /&gt;
+                &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)} /&gt;
+                &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)} /&gt;
+            &lt;/div&gt;
+
+            &lt;div className="board-row"&gt;
+                &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)} /&gt;
+                &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)} /&gt;
+                &lt;Square value={squares[8]} onSquareClick={() => handleClick(8)} /&gt;
+            &lt;/div&gt;
+        &lt;/&gt;
+    );
+}
+                            </code></pre>
+                        </div>
+                        </div>
+                    </div>
+                    <h4>Goals of the project:</h4>
+                    <div class="projectContainer1">
+                        
+                        <ul>• build an interactive tic-tac-toe game using React with the help of a <a href="https://react.dev/learn/tutorial-tic-tac-toe" target="_blank" class="tutorialLink">tutorial</a>. </ul>
+                        <ul>• learn the fundamentals of React: components, props, and state</ul>
+                        <ul>• learn the most common techniques in React development</ul>
+                        <ul>• get deeper insight into the unique strengths of React</ul>
+                    </div>
+                    <h4>Tools used:</h4>
+                    <div class="projectContainer2">
+                        <ul>• React</ul>
+                        <ul>• Node.js</ul>
+                        <ul>• JavaScript</ul>
+                        <ul>• Visual Studio Code</ul>
+                    </div>
+                    <h4>Summary:</h4>
+                    <p>
+                        <h5>Create an interactive tic-tac-toe game with React using my local development environment with Node.js</h5>
+                        <h5>How the game should work:</h5>
+                        <ul>• Lets you play tic-tac-toe
+                        <ul>• Indicates when a player has won the game</ul>
+                        <ul>• Stores a game’s history as a game progresses</ul>
+                        <ul>• Allows players to review a game’s history and see previous versions of a game’s board.</ul>
+                    </p>
+
+                </ul><br><br>
+            </div>
+
+            <div id="upcoming" class="tabcontent">
+                <ul>
+                    <li><h3>Custom UI for a Raspberry Pi system to collect and display various sensor data</h3>
+                        <br>
+                        <h4>Hardware:</h4>
+                        <ul>• Raspberry Pi 4A</ul>
+                        <ul>• Raspberry Pi Sense HAT sensor module</ul>
+                        <h4>Software:</h4>
+                        <ul>• C# (DotNet)</ul>
+                        <ul>• Python</ul>
+                        <ul>• Azure IoT Hub</ul>
+                        <ul>• visual studio code</ul>
+                        <ul>• git</ul>
+                        <h4>Possibilities for UI development:</h4>
+                        <ul>• Avalonia (performance-focused, cross-platform and open source)</ul>
+                        <ul>• Blazor</ul>
+                        <ul>• React</ul>
+                        <ul>• Angular</ul>
+                        <ul>• + other solutions that work with C# and/or Python</ul>
+                        <h4>Features:</h4>
+                        <ul>Mvp scope:</ul><br>
+                        <ul>• Dashboard for real-time data:</ul>
+                        <ul>• visual changes according to measurement values</ul>
+                        <ul>• possibility to customize dashboard contents (shown measurements)</ul><br>
+                        <ul>Alerts if certain set points are crossed</ul><br>
+                        <ul>Nice to have:</ul><br>
+                        <ul>Tab/page for history:</ul>
+                        <ul>• a trend for measurements</ul>
+                        <ul>• a filter (for each measurement)</ul>
+                    </li><br><br>
+                    <hr>
+                    <li><h3>Stock exchage electricity price APP using RESTful API</h3>
+                        <br>
+                        <ul>• Data from API: <a href="https://porssisahko.net/api" target="_blank" class="porssiLink">https://porssisahko.net/api</a></ul>
+                        <ul>• React</ul>
+                    </li><br><br>
+                    <hr>
+                    <li><h3>Custom UI for a chess game</h3>
+                        <br>
+                        <ul>• Game has been made using the Rust language
+                        <ul>• WASM + JS?</ul>
+                    </li><br><br>
+                    <hr>
+                    <li><h3>Darts game using Unity</h3>
+                        <br>
+                        <ul>• Game engine: Unity</ul>
+                        <ul>• UI: React Unity + Redux</ul>
+                    </li><br>
+                    <hr>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--Scriptit-->
+    <script src="../../resources/javascript/javascript.js"></script>
+</body>
+</html>
