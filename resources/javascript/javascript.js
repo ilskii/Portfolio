@@ -48,7 +48,7 @@ function openInfo(evt, tabName) {
     }
 }
 
-// Bindataan openInfo-toiminto ikkunaan, jotta se on käytettävissä
+// openInfo globaalisti käytettävissä
 window.openInfo = openInfo;
 
 // Näytetään ensimmäinen tabi oletuksena, kun sivu latautuu
@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Typing efekti ja welcome-teksti
-
 
 // Haetaan sivun tunniste (esim. tiedostonimi tai sivun polku)
 const pageKey = window.location.pathname; // Käytetään URL:n polkua tunnisteena
