@@ -80,7 +80,7 @@ html, body {
 }
 
 .menu-icon {
-    background: url(../../resources/menu-icon1.png) no-repeat center center;
+    background: url(../images/menu-icon1.png) no-repeat center center;
     background-size: contain;
     width: 50%;
     height: auto;
