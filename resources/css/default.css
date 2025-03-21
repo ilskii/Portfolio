@@ -35,7 +35,8 @@ html, body {
     color: #3AAFA9;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 10%;
     margin-top: 5%;
     border-radius: 10px;
     min-width: 850px;
