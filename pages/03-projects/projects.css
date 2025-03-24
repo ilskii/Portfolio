@@ -56,6 +56,11 @@
     box-sizing: border-box;
 }
 
+#completed {
+    overflow-x: auto;
+    box-sizing: border-box; 
+}
+
 #inProgress {
     overflow-x: auto;
     box-sizing: border-box; 
