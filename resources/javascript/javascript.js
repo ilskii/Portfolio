@@ -19,17 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Määritellään muuttujat
 function openInfo(evt, tabName) {
-    var i, tabcontent, tablinks;
+    let tabcontent, tablinks;
 
     // Haetaan kaikki "tabcontent"-luokkaiset elementit ja piilotetaan ne
     tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
+    for (let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     // Haetaan kaikki tabin linkit ja poistetaan "active"-luokka
     tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
+    for (let i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
@@ -48,7 +48,7 @@ function openInfo(evt, tabName) {
     }
 }
 
-// openInfo globaalisti käytettävissä
+// Bindataan openInfo-toiminto ikkunaan, jotta se on käytettävissä
 window.openInfo = openInfo;
 
 // Näytetään ensimmäinen tabi oletuksena, kun sivu latautuu
@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Typing efekti ja welcome-teksti
+
 
 // Haetaan sivun tunniste (esim. tiedostonimi tai sivun polku)
 const pageKey = window.location.pathname; // Käytetään URL:n polkua tunnisteena
