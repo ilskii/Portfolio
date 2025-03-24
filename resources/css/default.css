@@ -179,7 +179,6 @@ html, body {
     padding: 20px;
     min-height: 100vh;
     min-width: 10vh;
-    overflow-x: scroll;
 }
 
 .copyright {
