@@ -311,6 +311,8 @@ html, body {
 .tabcontent {
     display: none;
     animation: fadeEffect 1s;
+    max-width: 100%;
+    box-sizing: border-box;
     margin-right: 5%;
     padding: 5%;
     font-size: 25px;
