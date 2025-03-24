@@ -73,3 +73,9 @@
   background-color: #FEFFFF;
   color: #17252A;
 }
+
+@media (max-width: 999px) {
+  .container {
+    margin-top: 40%;
+  }
+}
