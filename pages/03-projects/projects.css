@@ -87,13 +87,10 @@
     .projectHeader {
         font-size: 24px;
     }
-    .codeContainer code {
-        font-size: 8px;
+    .codeContainer {
+        width: 100%;
     }
-    .parentCodeContainer {
-        max-width: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+    .codeContainer code {
+        font-size: 6px;
     }
 }
