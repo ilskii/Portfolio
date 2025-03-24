@@ -269,19 +269,16 @@ li { /* muotoile li-tagi */
     }
     .skills {
         font-size: 14px;
+        width: 100%;
     }
-    .skills{
-        width: 40%;
-        padding: 0;
-        margin: 0;
-    }
+
     #tools_languages {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr !important;
     }
 
     .skills,
     .skillsInfo {
-        grid-column: 1 / 2; /* Both take full width */
+        grid-column: 1 / 2;
         width: 100%;
     }
 
