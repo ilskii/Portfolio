@@ -151,55 +151,130 @@
                         <div class="codeContainer">
                             <h4>Code snippet from the project:</h4>
                             <pre><code class="language-javascript">
-const { app } = require('@azure/functions');
-const { GET } = require('./methods/GET');
-const { POST } = require('./methods/POST');
-const { DELETE } = require('./methods/DELETE');
-const { PUT } = require('./methods/PUT');
-    
-app.http('products', {
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], //määritellään käytettävät metodit
-    authLevel: 'anonymous',
-    route: "products/{id?}",
-    handler: async (request, context) => {
-    
-        //try-catch -virheenkäsittely, muista testata Postmanilla että toimiiko
+import GlobalLayout from "../layouts/GlobalLayout";
+import EmptyLine from "../components/EmptyLine";
+import React from "react";
+import { Divider, Box, Dialog, DialogContent, Fab, IconButton, Paper, Stack, TextField, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
+import DeleteIcon from '@mui/icons-material/Delete';
+import SaveIcon from '@mui/icons-material/Save';
+import AddIcon from '@mui/icons-material/Add';
+import productServices from "../services/products";
 
-        try{
+const Products = () => {
 
-            //switch statement / switch..case
+    const [showAddProduct, setShowAddProduct] = React.useState(false);
+    const [products, setProducts] = React.useState([]);
 
-            let response;
-
-            switch(request.method) {
-
-                case "GET": //"GET", "get" on eri asia
-                    response = await GET(context);
-                    return response;
-
-                case "POST":
-                    response = await POST(request, context);
-                    return response;
-
-                case "PUT":
-                    response = await PUT(request, context);
-                    return response;
-
-                case "DELETE":
-                    response = await DELETE(request, context);
-                    return response;
-
-                default:
-                    context.log("Bad method!");
-                    return { status: 400, body: "Bad request." }
-            }
+    //hakee tuotteet
+    const fetchProducts = React.useCallback(() => {
+        productServices
+        .getProducts()
+        .then(response => {
+            console.table(response); //console.table näyttää isomman määrän dataa selkeämmin kuin console.log
+            setProducts(prevProducts => [...prevProducts, ...response]); //sisältö kopioina
+        })
+    }, []);
+    //useRef hook
+    const fetchData = React.useRef(true);
+    React.useEffect(() => {  //useEffectille ei voi antaa arvoja
+        if(fetchData.current) {
+            fetchData.current = false;
+            fetchProducts();
         }
+    }, [fetchProducts]);
 
-        catch(error) {
-            return { status: 500, body: "Internal server error" }
+    const editProductInfo = (event, id, type) => {
+        let value = event.target.value;
+        let updatedProducts = products.map(product => {
+            if(product._id === id) {
+                if(type === "nimi") {
+                    product.name = value;
+                }
+                if(type === "hinta" && !isNaN(event.target.value)) {
+                    product.price = Number(value);
+                }
+                return product;
+            }
+            return product;
+        })
+
+        setProducts(updatedProducts);
+    }
+
+    const saveProduct = (id) => {
+        console.log("Tuotteen tiedot päivitetty: " + id);
+        const updatedProduct = products.find(product => product._id === id);
+
+        if(updatedProduct) {
+            productServices
+                .updateProduct(id, updatedProduct)
+                .then(response => {
+                    let updatedProducts = products.map(product => {
+                        if(product._id === id) {
+                            return response;
+                        }
+                        return product;
+                    })
+                    setProducts(updatedProducts);
+                })
+        } 
+    }
+    const deleteProduct = (id) => {
+        productServices //haetaan muuttuja product.js > productServices, ja annetaan id mukaan
+            .deleteProduct(id)
+            .then(() => {
+                let updatedProducts = products.filter(product => product._id !== id);
+                console.table(updatedProducts);
+                setProducts(updatedProducts);
+            })
+    }
+
+    const addProduct = () => {
+        console.log(`Uuden tuotteen nimi: ${nameRef.current.value}`);
+        console.log(`Uuden tuotteen hinta: ${priceRef.current.value}`);
+
+        if (!isNaN(priceRef.current.value)) {
+          let newProduct = {
+            name: nameRef.current.value,
+            price: Number(priceRef.current.value,)
+        };
+
+        productServices
+            .addProduct(newProduct)
+            .then(response => {
+                setProducts([...products, response]);
+                setShowAddProduct(false);
+            })
         }
     }
-});
+
+    const nameRef = React.useRef();
+    const priceRef = React.useRef();
+
+
+    return(
+        <GlobalLayout title="Hallitse">
+            <Grid container spacing={2} mt={5}>
+            {products.map(product =>
+                <Grid key={product._id} size={{xs: 12, sm: 6, md: 4, xl: 3}}>
+                    <Paper elevation={5} sx={{padding: 2}}>
+                        <TextField label="Tuotenimi" value={product.name} fullWidth onChange={event => editProductInfo(event, product._id, "nimi")} />
+                        <EmptyLine />
+                        <Stack direction="row">
+                            <TextField label="Hinta" value={product.price} fullWidth  onChange={event => editProductInfo(event, product._id, "hinta")} />
+                                <Box sx={{width: "100%", alignContent: "center", textAlign: "right"}}>
+                                    <IconButton color="success" onClick={() => saveProduct(product._id)}>
+                                        <SaveIcon />
+                                    </IconButton>
+                                    <IconButton color="error" onClick={() => deleteProduct (product._id)}>
+                                        <DeleteIcon />
+                                    </IconButton>
+                                </Box>
+                         </Stack>
+                    </Paper>
+                </Grid>
+            )}
                             </code></pre>
                         </div>
                         </div>
